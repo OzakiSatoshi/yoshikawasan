@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>音声ファイル再生</title>
+	<style>
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		
+		.button {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			background-color: blue;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: white;
+			font-size: 24px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="button" onclick="playSound()">
+			再生
+		</div>
+	</div>
+	
+	<audio id="audio" src="yoshikawa.mp3"></audio>
+	
+	<script>
+		function playSound() {
+			var audio = document.getElementById("audio");
+			audio.play();
+		}
+	</script>
+</body>
+</html>
