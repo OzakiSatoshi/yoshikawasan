@@ -21,21 +21,50 @@
 			color: white;
 			font-size: 24px;
 			cursor: pointer;
+			margin: 10px;
 		}
 	</style>
 </head>
 <body>
 	<div class="container">
-		<div class="button" onclick="playSound()">
+		<div class="button" onclick="playSound('yoshikawa1.mp3')">
+			再生
+		</div>
+		<div class="button" onclick="playSound('yoshikawa2.mp3')">
+			再生
+		</div>
+		<div class="button" onclick="playSound('yoshikawa3.mp3')">
+			再生
+		</div>
+		<div class="button" onclick="playSound('yoshikawa4.mp3')">
+			再生
+		</div>
+		<div class="button" onclick="playSound('yoshikawa5.mp3')">
+			再生
+		</div>
+		<div class="button" onclick="playSound('yoshikawa6.mp3')">
+			再生
+		</div>
+		<div class="button" onclick="playSound('yoshikawa7.mp3')">
+			再生
+		</div>
+		<div class="button" onclick="playSound('yoshikawa8.mp3')">
+			再生
+		</div>
+		<div class="button" onclick="playSound('yoshikawa9.mp3')">
+			再生
+		</div>
+		<div class="button" onclick="playSound('yoshikawa10.mp3')">
 			再生
 		</div>
 	</div>
 	
-	<audio id="audio" src="yoshikawa.mp3"></audio>
+	<audio id="audio"></audio>
 	
 	<script>
-		function playSound() {
+		function playSound(src) {
 			var audio = document.getElementById("audio");
+			audio.src = src;
 			audio.play();
 		}
 	</script>
