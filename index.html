@@ -4,8 +4,11 @@
 	<title>音声ファイル再生</title>
 	<style>
 		.container {
-			display: flex;
-			justify-content: center;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(4, 1fr);
+			gap: 10px;
+			justify-items: center;
 			align-items: center;
 			height: 100vh;
 		}
@@ -21,7 +24,6 @@
 			color: white;
 			font-size: 24px;
 			cursor: pointer;
-			margin: 10px;
 		}
 	</style>
 </head>
@@ -55,6 +57,12 @@
 			再生
 		</div>
 		<div class="button" onclick="playSound('yoshikawa10.mp3')">
+			再生
+		</div>
+		<div class="button" onclick="playSound('yoshikawa11.mp3')">
+			再生
+		</div>
+		<div class="button" onclick="playSound('yoshikawa12.mp3')">
 			再生
 		</div>
 	</div>
